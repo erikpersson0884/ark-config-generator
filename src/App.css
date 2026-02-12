@@ -1,0 +1,120 @@
+/* Layout */
+#app {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Sidebar: list of items */
+.sidebar {
+  width: 30%;
+  border-right: 1px solid #ccc;
+  padding: 10px;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+}
+
+.sidebar h3 {
+  margin-top: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  padding: 5px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+  transition: background 0.2s;
+}
+
+.sidebar li:hover {
+  background-color: #e0f0ff;
+}
+
+.sidebar li.selected {
+  background-color: #cce5ff;
+  font-weight: bold;
+}
+
+/* Main panel: resources */
+.main {
+  width: 70%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main h3 {
+  margin-top: 0;
+}
+
+/* Table styling */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 5px;
+  text-align: left;
+}
+
+th {
+  background-color: #eee;
+}
+
+td[contenteditable]:focus {
+  outline: 2px solid #4a90e2;
+  background-color: #f0f8ff;
+}
+
+/* Buttons and inputs */
+button {
+  margin: 5px 5px 5px 0;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: 1px solid #888;
+  border-radius: 3px;
+  background-color: #f0f0f0;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+input[type="text"],
+input[type="number"] {
+  padding: 5px;
+  margin-right: 5px;
+  border: 1px solid #888;
+  border-radius: 3px;
+  width: 120px;
+  box-sizing: border-box;
+}
+
+/* Add resource row */
+.add-resource {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+/* Save button styling */
+.save-btn {
+  margin-top: 15px;
+  padding: 8px 15px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+}
+
+.save-btn:hover {
+  background-color: #45a049;
+}
